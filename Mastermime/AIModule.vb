@@ -14,7 +14,6 @@ Module AIModule
     Public FireBeste(3) As Integer
     Public FireBesteScore(3) As Integer
     Public BrukerHarValgtKode As Boolean = True
-    Dim testgithub As Integer = 2
 
     Public Sub Gjett()
         Dim GjettRand As New Random
