@@ -416,4 +416,27 @@ Public Class frmSpill
         Me.Refresh()
         InvalidateTimer.Enabled = False
     End Sub
+    Private Sub VerifiserValgTimer_Tick(sender As Object, e As EventArgs) Handles VerifiserValgTimer.Tick
+        Dim i As Integer = 1
+        Do Until i = antallhull + 1
+            Dim blink As PegClass = testcollection.Item(turn * antallhull + i)
+            blink.ForeColor = Color.FromArgb(BlinkAlpha * 2 + 55, 100, 180, 255)
+            blink.Fokusert = True
+            i += 1
+        Loop
+        If BlinkØker = True Then
+            If BlinkAlpha = 100 Then
+                BlinkØker = False
+            Else
+                BlinkAlpha += 10
+            End If
+        Else
+            If BlinkAlpha = 0 Then
+                BlinkØker = True
+            Else
+                BlinkAlpha -= 10
+            End If
+        End If
+
+    End Sub
 End Class

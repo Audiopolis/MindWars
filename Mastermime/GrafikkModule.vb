@@ -15,12 +15,12 @@
     Public ElektriskTema As Boolean = True
     Public FokusertValgPegObjekt As ValgPegClass
     Public FokusertPegObjekt As PegClass
-
-    Public BlinkRad As Boolean = False
     Public FormLastet As Boolean = False
     Public Skaleringskonstant As Integer
     Public testposisjon As Boolean = False
     Public FokusertPeg As Integer
+    Public BlinkØker As Boolean = True
+    Public BlinkAlpha As Integer = 0
 
     Public Sub GenererValg()
         Dim testvalg As ValgPegClass
@@ -173,6 +173,18 @@
     End Sub
 
     Public Sub FjernFarge()
+        frmSpill.VerifiserValgTimer.Enabled = False
+        BlinkAlpha = 0
+        BlinkØker = False
+        If fargervalgt = antallhull Then
+            Dim i As Integer = 1
+            Do Until i = antallhull + 1
+                Dim blink As PegClass = testcollection.Item(turn * antallhull + i)
+                blink.YtrePen.Color = standardfarger(0)
+                blink.Fokusert = False
+                i += 1
+            Loop
+        End If
         If fargervalgt > 0 Then
             Dim test As PegClass = testcollection.Item(FokusertPeg)
             test.Fokusert = False
@@ -201,7 +213,7 @@
             test = testcollection.Item(FokusertPeg)
             frmSpill.LysTimer.Enabled = False
             test.Fokusert = False
-            BlinkRad = True
+            frmSpill.VerifiserValgTimer.Enabled = True
             Call FokusertPegEndret(fargervalgt + antallhull * turn + 1)
             Dim i = 1
         End If

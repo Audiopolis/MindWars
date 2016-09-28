@@ -7,8 +7,6 @@
     Private ersynlig As Boolean = False
     Private bildeskapt As Boolean = False
     Private HarFokus As Boolean = False
-
-
     Public TrengerEndring As Boolean
     'Public test As Bitmap
     'Dim testg As Graphics

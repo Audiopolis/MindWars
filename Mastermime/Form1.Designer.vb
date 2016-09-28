@@ -29,6 +29,7 @@ Partial Class frmSpill
         Me.LysTimer = New System.Windows.Forms.Timer(Me.components)
         Me.GrafikkTimer = New System.Windows.Forms.Timer(Me.components)
         Me.InvalidateTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.VerifiserValgTimer = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'Button2
@@ -62,6 +63,10 @@ Partial Class frmSpill
         '
         Me.InvalidateTimer.Interval = 200
         '
+        'VerifiserValgTimer
+        '
+        Me.VerifiserValgTimer.Interval = 50
+        '
         'frmSpill
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -82,4 +87,5 @@ Partial Class frmSpill
     Public WithEvents LysTimer As Timer
     Friend WithEvents GrafikkTimer As Timer
     Friend WithEvents InvalidateTimer As Timer
+    Friend WithEvents VerifiserValgTimer As Timer
 End Class

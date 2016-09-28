@@ -13,3 +13,10 @@ C:\Users\Magnus\Documents\GitHub\MindWars\Mastermime\bin\Debug\Mastermime.exe.co
 C:\Users\Magnus\Documents\GitHub\MindWars\Mastermime\obj\Debug\Mastermime.exe
 C:\Users\Magnus\Documents\GitHub\MindWars\Mastermime\obj\Debug\Mastermime.xml
 C:\Users\Magnus\Documents\GitHub\MindWars\Mastermime\obj\Debug\Mastermime.pdb
+C:\Users\Magnus\Documents\GitHub\MindWars\Mastermime\bin\Debug\Mastermime.exe
+C:\Users\Magnus\Documents\GitHub\MindWars\Mastermime\bin\Debug\Mastermime.pdb
+C:\Users\Magnus\Documents\GitHub\MindWars\Mastermime\bin\Debug\Mastermime.xml
+C:\Users\Magnus\Documents\GitHub\MindWars\Mastermime\obj\Debug\Mastermime.vbprojResolveAssemblyReference.cache
+C:\Users\Magnus\Documents\GitHub\MindWars\Mastermime\obj\Debug\Mastermime.frmSpill.resources
+C:\Users\Magnus\Documents\GitHub\MindWars\Mastermime\obj\Debug\Mastermime.Resources.resources
+C:\Users\Magnus\Documents\GitHub\MindWars\Mastermime\obj\Debug\Mastermime.vbproj.GenerateResource.Cache

@@ -18,6 +18,16 @@
     End Sub
 
     Public Sub Sjekk()
+        Dim i As Integer = 1
+        Do Until i = antallhull + 1
+            Dim blink As PegClass = testcollection.Item(turn * antallhull + i)
+            blink.YtrePen.Color = standardfarger(0)
+            blink.Fokusert = False
+            i += 1
+        Loop
+        BlinkAlpha = 0
+        BlinkØker = False
+        frmSpill.VerifiserValgTimer.Enabled = False
         frmSpill.LysTimer.Enabled = False
         VentMedÅFylleInn = True
         Dim whitepegs As Integer = 0
